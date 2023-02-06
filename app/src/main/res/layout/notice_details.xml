@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".notice_details"
+    android:orientation="horizontal">
+
+
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/vector"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="제목"
+        android:layout_marginTop="-45dp"
+        android:textSize="30dp"/>
+
+    <ImageButton
+        android:id="@+id/imageButton13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="80dp"
+        android:background="#00ff0000"
+        app:srcCompat="@drawable/modify"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <ImageButton
+        android:id="@+id/imageButton14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="80dp"
+        android:background="#00ff0000"
+        app:srcCompat="@drawable/delete"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="업로드 날짜"
+        android:layout_marginTop="-21dp"
+        android:layout_marginLeft="-315dp"/>
+
+    <EditText
+        android:id="@+id/editTextTextPersonName1"
+        android:layout_width="350dp"
+        android:layout_height="300dp"
+        android:layout_marginLeft="-67dp"
+        android:layout_marginTop="160dp"
+        android:background="@drawable/round_corner"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="업로드한 사람"
+        android:layout_marginTop="103dp"
+        android:layout_marginLeft="168dp"/>
+
+
+</LinearLayout>
