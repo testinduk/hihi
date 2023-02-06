@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="ImageView1" type="id" />
+    <item name="new_password" type="id" />
+    <item name="password1" type="id" />
+    <item name="ch_password" type="id" />
+    <item name="ch_password1" type="id" />
+    <item name="grade" type="id" />
+    <item name="grade1" type="id" />
+    <item name="class1" type="id" />
+    <item name="class2" type="id" />
+    <item name="email_mod" type="id" />
+    <item name="email_ch" type="id" />
+    <item name="email_ch1" type="id" />
+</resources>
