@@ -1,6 +1,6 @@
 package com.example.figma;
 
-import android.app.Activity;
+import androidx.appcompat.app.AppCompatActivity;;
+import android.os.Bundle;
+import androidx.annotation.Nullable;
 
-public class chat_person extends Activity {
-}
