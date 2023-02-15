@@ -5,6 +5,7 @@
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
+        android:usesCleartextTraffic="true"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -15,7 +16,7 @@
         android:theme="@style/Theme.Figma"
         tools:targetApi="31">
         <activity
-            android:name=".main_home"
+            android:name=".login"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -35,7 +36,8 @@
         <activity android:name=".sharing_board"/>
         <activity android:name=".bullentin_board"/>
         <activity android:name=".mypage"/>
-
+        <activity android:name=".bullentin_board_details"/>
+        <activity android:name=".login"/>
     </application>
 
 </manifest>

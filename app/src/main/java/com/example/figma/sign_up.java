@@ -1,10 +1,12 @@
 package com.example.figma;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -25,6 +27,16 @@ public class sign_up extends AppCompatActivity {
         setContentView(R.layout.sign_up);
         mAuth = FirebaseAuth.getInstance(); //선언한 인스턴스를 초기화
         findViewById(R.id.finishBT).setOnClickListener(onClickListener);
+
+        ImageButton backButton = findViewById(R.id.backButton);
+        backButton.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), bullentin_board_details.class);
+                startActivity(intent);
+            }
+        });
     }
 
     View.OnClickListener onClickListener = new View.OnClickListener() {
@@ -41,7 +53,7 @@ public class sign_up extends AppCompatActivity {
     private void signUp() {
         String id = ((EditText) findViewById(R.id.editTextTextPersonName2)).getText().toString();
         String password = ((EditText) findViewById(R.id.editTextTextPassword)).getText().toString();
-        String passwordCheck = ((EditText) findViewById(R.id.editTextTextPassword)).getText().toString();
+        String passwordCheck = ((EditText) findViewById(R.id.editTextNumberPassword)).getText().toString();
 
         if (id.length() > 0 && password.length() > 0 && passwordCheck.length() > 0) {
             if (password.equals(passwordCheck)) {

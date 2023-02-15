@@ -115,7 +115,7 @@
         android:layout_marginTop="24dp"
         android:background="@drawable/rectangle30"
         android:ems="10"
-        android:inputType="numberPassword"
+        android:inputType="textPassword"
         app:layout_constraintStart_toStartOf="@+id/editTextTextPassword"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword"
         tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
@@ -202,7 +202,7 @@
         app:layout_constraintVertical_bias="0.496" />
 
     <ImageButton
-        android:id="@+id/Button1"
+        android:id="@+id/backButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
