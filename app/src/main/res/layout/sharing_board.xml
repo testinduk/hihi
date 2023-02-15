@@ -11,144 +11,198 @@
         android:id="@+id/imageButton5"
         android:layout_width="30dp"
         android:layout_height="30dp"
+        android:layout_marginStart="39dp"
+        android:layout_marginEnd="38dp"
         android:background="#00ff0000"
-        app:srcCompat="@drawable/group12"
-        tools:layout_editor_absoluteX="343dp"
-        tools:layout_editor_absoluteY="661dp" />
+        app:layout_constraintBottom_toBottomOf="@+id/imageButton4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView30"
+        app:layout_constraintTop_toTopOf="@+id/imageButton4"
+        app:srcCompat="@drawable/group12" />
 
     <ImageButton
         android:id="@+id/imageButton4"
         android:layout_width="30dp"
         android:layout_height="30dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginEnd="76dp"
+        android:layout_marginBottom="5dp"
         android:background="#00ff0000"
-        app:srcCompat="@drawable/plus"
-        tools:layout_editor_absoluteX="267dp"
-        tools:layout_editor_absoluteY="661dp" />
+        app:layout_constraintBottom_toTopOf="@+id/textView30"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton5"
+        app:layout_constraintStart_toStartOf="@+id/imageButton3"
+        app:srcCompat="@drawable/plus" />
 
     <ImageButton
         android:id="@+id/imageButton2"
         android:layout_width="30dp"
         android:layout_height="30dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginEnd="77dp"
         android:background="#00ff0000"
-        app:srcCompat="@drawable/heart3"
-        tools:layout_editor_absoluteX="114dp"
-        tools:layout_editor_absoluteY="661dp" />
+        app:layout_constraintBottom_toBottomOf="@+id/imageButton3"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton3"
+        app:layout_constraintStart_toStartOf="@+id/imageButton"
+        app:layout_constraintTop_toTopOf="@+id/imageButton3"
+        app:srcCompat="@drawable/heart3" />
 
     <ImageButton
         android:id="@+id/imageButton"
         android:layout_width="30dp"
         android:layout_height="30dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginEnd="39dp"
         android:background="#00ff0000"
-        app:srcCompat="@drawable/chat"
-        tools:layout_editor_absoluteX="38dp"
-        tools:layout_editor_absoluteY="661dp" />
+        app:layout_constraintBottom_toBottomOf="@+id/imageButton2"
+        app:layout_constraintEnd_toEndOf="@+id/textView5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageButton2"
+        app:srcCompat="@drawable/chat" />
 
     <ImageButton
         android:id="@+id/imageButton3"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:background="#00ff0000"
-        app:srcCompat="@drawable/hut"
-        tools:layout_editor_absoluteX="191dp"
-        tools:layout_editor_absoluteY="661dp" />
+        app:layout_constraintBottom_toBottomOf="@+id/imageButton4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageButton4"
+        app:srcCompat="@drawable/hut" />
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="310dp"
+        android:layout_width="0dp"
         android:layout_height="150dp"
-        app:srcCompat="@android:drawable/ic_menu_gallery"
-        tools:layout_editor_absoluteX="50dp"
-        tools:layout_editor_absoluteY="64dp" />
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="66dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_gallery" />
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="230dp"
+        android:layout_marginBottom="230dp"
         android:text="글쓴이(학번)"
-        tools:layout_editor_absoluteX="32dp"
-        tools:layout_editor_absoluteY="261dp" />
+        app:layout_constraintBottom_toTopOf="@+id/textView5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageButton15" />
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="110dp"
-        android:layout_height="32dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="2dp"
         android:text="제목"
-        tools:layout_editor_absoluteX="32dp"
-        tools:layout_editor_absoluteY="478dp" />
+        app:layout_constraintBottom_toTopOf="@+id/textView5"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton2"
+        app:layout_constraintStart_toStartOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
     <TextView
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="202dp"
         android:text="글쓴이(학번)"
-        tools:layout_editor_absoluteX="32dp"
-        tools:layout_editor_absoluteY="510dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="110dp"
+        android:layout_width="0dp"
         android:layout_height="32dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="19dp"
         android:text="제목"
-        tools:layout_editor_absoluteX="32dp"
-        tools:layout_editor_absoluteY="229dp" />
+        app:layout_constraintBottom_toBottomOf="@+id/textView4"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="310dp"
+        android:layout_width="0dp"
         android:layout_height="150dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="51dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
         app:srcCompat="@android:drawable/ic_menu_gallery"
-        tools:ignore="UnknownId"
-        tools:layout_editor_absoluteX="50dp"
-        tools:layout_editor_absoluteY="328dp" />
+        tools:ignore="UnknownId" />
 
     <ImageButton
         android:id="@+id/imageButton15"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="31dp"
         android:background="#ffffff"
         android:src="@drawable/back"
-        tools:layout_editor_absoluteX="17dp"
-        tools:layout_editor_absoluteY="31dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView27"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="5dp"
         android:text="채팅"
-        tools:layout_editor_absoluteX="40dp"
-        tools:layout_editor_absoluteY="696dp" />
+        app:layout_constraintStart_toStartOf="@+id/imageButton"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton" />
 
     <TextView
         android:id="@+id/textView28"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
         android:text="나눔"
-        tools:layout_editor_absoluteX="118dp"
-        tools:layout_editor_absoluteY="696dp" />
+        app:layout_constraintEnd_toEndOf="@+id/imageButton2"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton2" />
 
     <TextView
         android:id="@+id/textView29"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="5dp"
         android:text="홈"
-        tools:layout_editor_absoluteX="199dp"
-        tools:layout_editor_absoluteY="696dp" />
+        app:layout_constraintStart_toStartOf="@+id/imageButton3"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton3" />
 
     <TextView
         android:id="@+id/textView30"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="16dp"
         android:text="게시판"
-        tools:layout_editor_absoluteX="265dp"
-        tools:layout_editor_absoluteY="696dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textView31" />
 
     <TextView
         android:id="@+id/textView31"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="16dp"
         android:text="마이페이지"
-        tools:layout_editor_absoluteX="330dp"
-        tools:layout_editor_absoluteY="696dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton5" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
