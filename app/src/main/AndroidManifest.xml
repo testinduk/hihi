@@ -26,6 +26,9 @@
                 android:value="" />
         </activity>
         <activity android:name=".notice_list"/>
+        <activity android:name=".notice_writing"/>
+        <activity android:name=".Timetable"/>
+
 
     </application>
 

@@ -7,7 +7,7 @@
     tools:context=".main_home">
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btn_timetable"
         android:layout_width="0dp"
         android:layout_height="30dp"
         android:layout_marginTop="52dp"
@@ -32,7 +32,7 @@
         android:textSize="8dp"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/button10"
+        app:layout_constraintStart_toEndOf="@+id/show_notice_writing"
         app:layout_constraintTop_toBottomOf="@+id/tableLayout2" />
 
     <LinearLayout
@@ -120,11 +120,11 @@
         android:textColor="#000000"
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/button10"
+        app:layout_constraintEnd_toStartOf="@+id/show_notice_writing"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/button10"
+        android:id="@+id/show_notice_writing"
         android:layout_width="80dp"
         android:layout_height="32dp"
         android:backgroundTint="#FFFFFF"
@@ -147,7 +147,7 @@
         app:layout_constraintBottom_toBottomOf="@+id/textView7"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/button">
+        app:layout_constraintTop_toTopOf="@+id/show_notice_more">
 
         <TableRow
             android:layout_width="match_parent"
