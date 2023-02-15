@@ -26,6 +26,10 @@
                 android:value="" />
         </activity>
         <activity android:name=".notice_list"/>
+        <activity android:name=".chat_person"/>
+        <activity android:name=".sharing_board"/>
+        <activity android:name=".bullentin_board"/>
+        <activity android:name=".mypage"/>
 
     </application>
 
