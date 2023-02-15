@@ -12,16 +12,5 @@ public class login extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login);
 
-        // (공지)더보기 버튼
-        Button sign = findViewById(R.id.sign);
-        sign.setOnClickListener(new View.OnClickListener() {
-
-
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), sign_up.class);
-                startActivity(intent);
-            }
-        });
     }
 }
