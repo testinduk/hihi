@@ -71,7 +71,7 @@
         android:textColor="#000000"
         android:textSize="13dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/shareButton2" />
+        app:layout_constraintStart_toStartOf="@+id/sharingButton" />
 
     <TextView
         android:id="@+id/textView4"
@@ -83,7 +83,7 @@
         android:textColor="#000000"
         android:textSize="13dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/homeButton3" />
+        app:layout_constraintStart_toStartOf="@+id/homeButton" />
 
     <TextView
         android:id="@+id/textView5"
@@ -170,29 +170,32 @@
         android:id="@+id/chatButton"
         android:layout_width="30dp"
         android:layout_height="30dp"
-        android:layout_marginStart="23dp"
+        android:layout_marginStart="20dp"
         android:background="#ffffff"
-        app:layout_constraintBottom_toBottomOf="@+id/shareButton2"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/shareButton2"
         android:onClick="chatButton"
+        app:layout_constraintBottom_toBottomOf="@+id/sharingButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/sharingButton"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/chat" />
 
     <ImageButton
-        android:id="@+id/shareButton2"
+        android:id="@+id/sharingButton"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_marginStart="59dp"
         android:layout_marginEnd="59dp"
-        android:layout_marginBottom="2dp"
+        android:layout_marginBottom="4dp"
         android:background="#ffffff"
+        android:onClick="sharingButton"
         app:layout_constraintBottom_toTopOf="@+id/textView3"
         app:layout_constraintEnd_toStartOf="@+id/textView4"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/textView2"
         app:srcCompat="@drawable/heart" />
 
     <ImageButton
-        android:id="@+id/homeButton3"
+        android:id="@+id/homeButton"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_marginTop="1dp"
@@ -201,11 +204,11 @@
         app:layout_constraintBottom_toTopOf="@+id/textView4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/shareButton2"
+        app:layout_constraintTop_toTopOf="@+id/sharingButton"
         app:srcCompat="@drawable/hut" />
 
     <ImageButton
-        android:id="@+id/boardButton4"
+        android:id="@+id/boardButton"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_marginStart="2dp"
@@ -216,18 +219,18 @@
         app:layout_constraintBottom_toTopOf="@+id/textView5"
         app:layout_constraintEnd_toEndOf="@+id/textView5"
         app:layout_constraintStart_toStartOf="@+id/textView5"
-        app:layout_constraintTop_toTopOf="@+id/mypageButton5"
+        app:layout_constraintTop_toTopOf="@+id/mypageButton"
         app:srcCompat="@drawable/plus" />
 
     <ImageButton
-        android:id="@+id/mypageButton5"
+        android:id="@+id/mypageButton"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:background="#ffffff"
-        app:layout_constraintBottom_toBottomOf="@+id/shareButton2"
+        app:layout_constraintBottom_toBottomOf="@+id/sharingButton"
         app:layout_constraintEnd_toEndOf="@+id/textView6"
         app:layout_constraintStart_toStartOf="@+id/textView6"
-        app:layout_constraintTop_toTopOf="@+id/shareButton2"
+        app:layout_constraintTop_toTopOf="@+id/sharingButton"
         app:srcCompat="@drawable/mypage" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
