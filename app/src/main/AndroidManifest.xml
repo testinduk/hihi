@@ -28,6 +28,9 @@
                 android:value="" />
         </activity>
         <activity android:name=".notice_list"/>
+        <activity android:name=".notice_writing"/>
+        <activity android:name=".Timetable"/>
+
         <activity android:name=".chat_person"/>
         <activity android:name=".sharing_board"/>
         <activity android:name=".bullentin_board"/>
