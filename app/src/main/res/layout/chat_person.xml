@@ -19,38 +19,41 @@
         app:srcCompat="@drawable/back" />
 
     <ImageButton
-        android:id="@+id/imageButton2"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:id="@+id/chatButton"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
         android:background="#ffffff"
-        app:layout_constraintBottom_toBottomOf="@+id/imageButton3"
+        app:layout_constraintBottom_toBottomOf="@+id/sharingButton"
         app:layout_constraintEnd_toEndOf="@+id/textView4"
         app:layout_constraintStart_toStartOf="@+id/recyclerView4"
-        app:layout_constraintTop_toTopOf="@+id/imageButton3"
+        app:layout_constraintTop_toTopOf="@+id/sharingButton"
+        android:onClick="chatButton"
         app:srcCompat="@drawable/chat" />
 
     <ImageButton
-        android:id="@+id/imageButton6"
+        android:id="@+id/mypageButton"
         android:layout_width="30dp"
-        android:layout_height="0dp"
+        android:layout_height="30dp"
         android:layout_marginStart="15dp"
         android:layout_marginEnd="15dp"
         android:background="#ffffff"
-        app:layout_constraintBottom_toBottomOf="@+id/imageButton5"
+        app:layout_constraintBottom_toBottomOf="@+id/boardButton"
         app:layout_constraintEnd_toEndOf="@+id/recyclerView3"
         app:layout_constraintStart_toStartOf="@+id/textView8"
-        app:layout_constraintTop_toTopOf="@+id/imageButton5"
+        app:layout_constraintTop_toTopOf="@+id/boardButton"
+        android:onClick="mypageButton"
         app:srcCompat="@drawable/mypage" />
 
     <ImageButton
-        android:id="@+id/imageButton4"
+        android:id="@+id/homeButton"
         android:layout_width="30dp"
         android:layout_height="0dp"
         android:background="#ffffff"
-        app:layout_constraintBottom_toBottomOf="@+id/imageButton5"
+        app:layout_constraintBottom_toBottomOf="@+id/boardButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageButton5"
+        app:layout_constraintTop_toTopOf="@+id/boardButton"
+        android:onClick="homeButton"
         app:srcCompat="@drawable/hut" />
 
     <TextView
@@ -61,8 +64,8 @@
         android:layout_marginEnd="8dp"
         android:text="홈"
         android:textColor="#000000"
-        app:layout_constraintEnd_toEndOf="@+id/imageButton4"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton4" />
+        app:layout_constraintEnd_toEndOf="@+id/homeButton"
+        app:layout_constraintTop_toBottomOf="@+id/homeButton" />
 
     <TextView
         android:id="@+id/textView4"
@@ -73,19 +76,21 @@
         android:text="채팅"
         android:textColor="#000000"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton2" />
+        app:layout_constraintTop_toBottomOf="@+id/chatButton" />
 
     <ImageButton
-        android:id="@+id/imageButton5"
+        android:id="@+id/boardButton"
         android:layout_width="30dp"
         android:layout_height="wrap_content"
+        android:layout_height="30dp"
         android:layout_marginStart="53dp"
         android:layout_marginEnd="53dp"
         android:layout_marginBottom="4dp"
         android:background="#ffffff"
         app:layout_constraintBottom_toTopOf="@+id/textView7"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton6"
+        app:layout_constraintEnd_toStartOf="@+id/mypageButton"
         app:layout_constraintStart_toEndOf="@+id/textView6"
+        android:onClick="boardButton"
         app:srcCompat="@drawable/plus" />
 
     <TextView
@@ -108,19 +113,20 @@
         android:text="마이페이지"
         android:textColor="#000000"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton6" />
+        app:layout_constraintTop_toBottomOf="@+id/mypageButton" />
 
     <ImageButton
-        android:id="@+id/imageButton3"
+        android:id="@+id/sharingButton"
         android:layout_width="30dp"
         android:layout_height="0dp"
         android:layout_marginStart="83dp"
         android:layout_marginEnd="83dp"
         android:background="#ffffff"
-        app:layout_constraintBottom_toBottomOf="@+id/imageButton4"
+        app:layout_constraintBottom_toBottomOf="@+id/homeButton"
         app:layout_constraintEnd_toEndOf="@+id/textView6"
         app:layout_constraintStart_toStartOf="@+id/recyclerView2"
-        app:layout_constraintTop_toTopOf="@+id/imageButton4"
+        app:layout_constraintTop_toTopOf="@+id/homeButton"
+        android:onClick="sharingButton"
         app:srcCompat="@drawable/heart" />
 
     <TextView
@@ -130,8 +136,8 @@
         android:layout_marginTop="4dp"
         android:text="나눔"
         android:textColor="#000000"
-        app:layout_constraintEnd_toEndOf="@+id/imageButton3"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton3" />
+        app:layout_constraintEnd_toEndOf="@+id/sharingButton"
+        app:layout_constraintTop_toBottomOf="@+id/sharingButton" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView2"
@@ -141,7 +147,7 @@
         android:layout_marginTop="34dp"
         android:layout_marginEnd="15dp"
         android:layout_marginBottom="34dp"
-        app:layout_constraintBottom_toTopOf="@+id/imageButton2"
+        app:layout_constraintBottom_toTopOf="@+id/chatButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/searchView" />
