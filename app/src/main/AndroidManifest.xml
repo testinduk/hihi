@@ -17,6 +17,7 @@
         android:theme="@style/Theme.Figma"
         tools:targetApi="31">
         <activity
+            android:name=".main_home"
             android:name=".login"
             android:exported="true">
             <intent-filter>
@@ -36,6 +37,7 @@
         <activity android:name=".chat_person"/>
         <activity android:name=".sharing_board"/>
         <activity android:name=".bullentin_board"/>
+        <activity android:name=".bullentin_board_writing"/>
         <activity android:name=".mypage"/>
 
     </application>

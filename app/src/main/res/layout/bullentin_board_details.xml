@@ -54,7 +54,7 @@
         app:layout_constraintStart_toEndOf="@id/textView1" />
 
     <ImageButton
-        android:id="@+id/imageButton2"
+        android:id="@+id/btn_amend"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@android:color/transparent"
