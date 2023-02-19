@@ -14,6 +14,7 @@ public class bullentin_board_details extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.bullentin_board_details);
 
+        // 뒤로가기 버튼
         ImageButton backButton = findViewById(R.id.backButton);
         backButton.setOnClickListener(new View.OnClickListener() {
 
@@ -23,5 +24,8 @@ public class bullentin_board_details extends Activity {
                 startActivity(intent);
             }
         });
+
+
+
     }
 }
