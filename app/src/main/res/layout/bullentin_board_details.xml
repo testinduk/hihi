@@ -7,7 +7,7 @@
     tools:context=".bullentin_board_details">
 
     <ImageButton
-        android:id="@+id/imageButton1"
+        android:id="@+id/backButton"
         android:layout_width="58dp"
         android:layout_height="58dp"
         android:layout_marginStart="5dp"
@@ -15,6 +15,7 @@
         android:background="@android:color/transparent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        android:onClick="backButton"
         app:srcCompat="@drawable/vector" />
 
     <TextView
@@ -26,7 +27,7 @@
         android:textSize="34sp"
         android:textColor="@color/black"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton1" />
+        app:layout_constraintTop_toBottomOf="@+id/backButton" />
 
     <TextView
         android:id="@+id/textView2"

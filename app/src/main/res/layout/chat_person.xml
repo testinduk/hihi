@@ -8,9 +8,9 @@
 
 
     <ImageButton
-        android:id="@+id/imageButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/backButton"
+        android:layout_width="10dp"
+        android:layout_height="21dp"
         android:layout_marginStart="17dp"
         android:layout_marginTop="32dp"
         android:background="#ffffff"
@@ -183,8 +183,8 @@
         android:layout_height="0dp"
         android:background="#ffffff"
         app:layout_constraintBottom_toTopOf="@+id/recyclerView3"
-        app:layout_constraintEnd_toEndOf="@+id/imageButton"
-        app:layout_constraintStart_toEndOf="@+id/imageButton"
+        app:layout_constraintEnd_toEndOf="@+id/backButton"
+        app:layout_constraintStart_toEndOf="@+id/backButton"
         app:layout_constraintTop_toTopOf="@+id/textView"
         app:srcCompat="@drawable/polygon2"
         tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck,ImageContrastCheck" />
@@ -223,7 +223,7 @@
         android:layout_marginTop="16dp"
         android:text="교수"
         app:layout_constraintStart_toEndOf="@+id/imageButton7"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton" />
+        app:layout_constraintTop_toBottomOf="@+id/backButton" />
 
     <TextView
         android:id="@+id/textView3"
