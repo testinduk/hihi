@@ -69,6 +69,17 @@ public class sharing_board extends Activity {
                 startActivity(intent);
             }
         });
+
+        // 뒤로가기 버튼
+        ImageButton backButton = findViewById(R.id.backButton);
+        backButton.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), main_home.class);
+                startActivity(intent);
+            }
+        });
     }
 
 }

@@ -28,12 +28,13 @@ public class sign_up extends AppCompatActivity {
         mAuth = FirebaseAuth.getInstance(); //선언한 인스턴스를 초기화
         findViewById(R.id.finishBT).setOnClickListener(onClickListener);
 
+        // 뒤로가기 버튼
         ImageButton backButton = findViewById(R.id.backButton);
         backButton.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), bullentin_board_details.class);
+                Intent intent = new Intent(getApplicationContext(), login.class);
                 startActivity(intent);
             }
         });
