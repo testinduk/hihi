@@ -26,18 +26,6 @@ public class bullentin_board_details extends Activity {
                 startActivity(intent);
             }
         });
-
-
-
-    }
-}
-
-import androidx.appcompat.app.AppCompatActivity;
-
-public class bullentin_board_details extends AppCompatActivity {
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.bullentin_board_details);
         ImageButton btn_amend = findViewById(R.id.btn_amend);
 
 
@@ -49,7 +37,5 @@ public class bullentin_board_details extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
-
     }
 }
