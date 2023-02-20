@@ -8,7 +8,7 @@
 
 
     <ImageButton
-        android:id="@id/ImageButton1"
+        android:id="@id/backButton"
         android:layout_width="58dp"
         android:layout_height="58dp"
         android:layout_marginStart="10dp"
@@ -29,7 +29,7 @@
         android:textAlignment="center"
         android:textSize="24dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@id/ImageButton1"
+        app:layout_constraintStart_toStartOf="@id/backButton"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
@@ -230,9 +230,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="20dp"
         android:textSize="10dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/email_ch"
         tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
@@ -243,6 +245,7 @@
         android:layout_height="wrap_content"
         android:text="회원탈퇴"
         android:textColor="@color/red"
+        android:textSize="20dp"
         android:backgroundTint="@color/white"
         android:background="@drawable/chat_bubble"
         android:layout_marginEnd="15dp"
