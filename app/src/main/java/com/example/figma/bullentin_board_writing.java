@@ -26,13 +26,5 @@ public class bullentin_board_writing extends Activity {
                 startActivity(intent);
             }
         });
-
-
-
-
-
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.bullentin_board_writing);
     }
 }
