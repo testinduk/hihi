@@ -26,9 +26,9 @@ public class bullentin_board_details extends Activity {
                 startActivity(intent);
             }
         });
+
+
         ImageButton btn_amend = findViewById(R.id.btn_amend);
-
-
         btn_amend.setOnClickListener(new View.OnClickListener() {
 
             @Override
