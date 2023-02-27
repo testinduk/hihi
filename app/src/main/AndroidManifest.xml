@@ -16,10 +16,15 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+
+            android:exported="true"
+            android:name=".login">
+
             android:name=".chatting_main"
 
             android:name=".bullentin_board"
             android:exported="true">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
