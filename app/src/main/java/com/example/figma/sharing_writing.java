@@ -64,8 +64,13 @@ public class sharing_writing extends Activity {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
+                Intent intent = new Intent(getApplicationContext(), sharing_board.class);
+                startActivity(intent);
+
                 //에딧 텍스트 값을 문자열로 바꾸어 함수에 넣어줍니다.
                 add_sharing(edit1.getText().toString(),edit2.getText().toString());
+
             }
         });
 
@@ -86,6 +91,9 @@ public class sharing_writing extends Activity {
         startActivity(i);
         finish();
     }
+
+}
+
 }
 
 
@@ -211,3 +219,4 @@ public class sharing_writing extends Activity {
 //        }
 //    }
 //}
+

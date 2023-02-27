@@ -19,10 +19,12 @@ public class bullentin_board_writing extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.bullentin_board_writing);
 
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.bullentin_board_details);
+
 
         // 뒤로가기 버튼
         ImageButton backButton = findViewById(R.id.backButton);
@@ -30,7 +32,7 @@ public class bullentin_board_writing extends Activity {
 
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), bullentin_board_details.class);
+                Intent intent = new Intent(getApplicationContext(), bullentin_board.class);
                 startActivity(intent);
             }
         });
