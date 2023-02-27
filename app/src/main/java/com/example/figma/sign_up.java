@@ -1,10 +1,12 @@
 package com.example.figma;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -25,6 +27,17 @@ public class sign_up extends AppCompatActivity {
         setContentView(R.layout.sign_up);
         mAuth = FirebaseAuth.getInstance(); //선언한 인스턴스를 초기화
         findViewById(R.id.finishBT).setOnClickListener(onClickListener);
+
+        // 뒤로가기 버튼
+        ImageButton backButton = findViewById(R.id.backButton);
+        backButton.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), login.class);
+                startActivity(intent);
+            }
+        });
     }
 
     View.OnClickListener onClickListener = new View.OnClickListener() {

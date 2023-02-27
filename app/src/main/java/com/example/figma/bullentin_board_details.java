@@ -1,6 +1,11 @@
 package com.example.figma;
 
+
 import android.content.DialogInterface;
+
+
+import android.app.Activity;
+
 import android.widget.Button;
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,18 +13,39 @@ import android.view.View;
 import android.widget.ImageButton;
 import android.widget.Toast;
 
+
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class bullentin_board_details extends AppCompatActivity {
-    protected void onCreate(Bundle savedInstanceState) {
+
+import androidx.annotation.Nullable;
+public class bullentin_board_details extends Activity {
+    @Override
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.bullentin_board_details);
+
 
         // 수정 버튼
         ImageButton btn_bul_amend = findViewById(R.id.btn_bul_amend);
 
         btn_bul_amend.setOnClickListener(new View.OnClickListener() {
+
+        // 뒤로가기 버튼
+        ImageButton backButton = findViewById(R.id.backButton);
+        backButton.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), bullentin_board.class);
+                startActivity(intent);
+            }
+        });
+
+
+        ImageButton btn_amend = findViewById(R.id.btn_amend);
+        btn_amend.setOnClickListener(new View.OnClickListener() {
+
 
             @Override
             public void onClick(View view) {
@@ -27,6 +53,7 @@ public class bullentin_board_details extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
 
         // 삭제 메시지
         ImageButton btn_bul_del = findViewById(R.id.btn_bul_del);
@@ -47,6 +74,6 @@ public class bullentin_board_details extends AppCompatActivity {
                 builder.create().show();
             }
         });
+
     }
 }
-

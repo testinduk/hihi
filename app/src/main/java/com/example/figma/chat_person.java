@@ -1,5 +1,13 @@
 package com.example.figma;
 
+
+
+import android.app.Activity;
+import android.content.Intent;
+import android.view.View;
+import android.widget.Button;
+
+
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -67,6 +75,17 @@ public class chat_person extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), mypage.class);
+                startActivity(intent);
+            }
+        });
+
+        // 뒤로가기 버튼
+        ImageButton backButton = findViewById(R.id.backButton);
+        backButton.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), main_home.class);
                 startActivity(intent);
             }
         });
