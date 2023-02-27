@@ -33,7 +33,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@id/ImageView1"
+        android:id="@+id/changeImage"
         android:background="@color/gray"
 
         android:layout_marginTop="10dp"
@@ -239,23 +239,23 @@
         app:layout_constraintTop_toBottomOf="@id/email_ch"
         tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
-    <android.widget.Button
-        android:id="@+id/remove"
+    <Button
+        android:id="@+id/warningButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="회원탈퇴"
-        android:textColor="@color/red"
+        android:background="@color/white"
+        android:textColor="@color/black"
         android:textSize="20dp"
         android:backgroundTint="@color/white"
-        android:background="@drawable/chat_bubble"
         android:layout_marginEnd="15dp"
         android:layout_marginBottom="10dp"
-        app:layout_constraintEnd_toStartOf="@id/btn1"
+        app:layout_constraintEnd_toStartOf="@id/changeButton"
         app:layout_constraintBottom_toBottomOf="parent"
         />
 
-    <android.widget.Button
-        android:id="@+id/btn1"
+    <Button
+        android:id="@+id/changeButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="수정완료"

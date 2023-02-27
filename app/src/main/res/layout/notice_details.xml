@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".notice_details"
-    android:orientation="horizontal">
+    android:orientation="horizontal"
+    tools:context=".notice_details">
 
 
     <ImageButton
@@ -20,24 +20,24 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="제목"
         android:layout_marginTop="-45dp"
-        android:textSize="30dp"/>
+        android:text="제목"
+        android:textSize="30dp" />
 
     <ImageButton
-        android:id="@+id/imageButton13"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="200dp"
+        android:id="@+id/pencilButton"
+        android:layout_width="50dp"
+        android:layout_height="53dp"
+        android:layout_marginLeft="150dp"
         android:layout_marginTop="80dp"
         android:background="#00ff0000"
         app:srcCompat="@drawable/modify"
         tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
     <ImageButton
-        android:id="@+id/imageButton14"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/trashButton"
+        android:layout_width="47dp"
+        android:layout_height="59dp"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="80dp"
         android:background="#00ff0000"
@@ -48,9 +48,9 @@
         android:id="@+id/textView24"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="업로드 날짜"
+        android:layout_marginLeft="-315dp"
         android:layout_marginTop="-21dp"
-        android:layout_marginLeft="-315dp"/>
+        android:text="업로드 날짜" />
 
     <EditText
         android:id="@+id/editTextTextPersonName1"
@@ -68,9 +68,9 @@
         android:id="@+id/textView26"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="업로드한 사람"
+        android:layout_marginLeft="168dp"
         android:layout_marginTop="103dp"
-        android:layout_marginLeft="168dp"/>
+        android:text="업로드한 사람" />
 
 
 </LinearLayout>
