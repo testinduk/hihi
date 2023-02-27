@@ -7,7 +7,6 @@
     tools:context=".sharing_board">
 
 
-
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="360dp"
@@ -137,12 +136,10 @@
         android:id="@+id/homeButton"
         android:layout_width="30dp"
         android:layout_height="0dp"
-        android:layout_marginStart="134dp"
         android:layout_marginEnd="134dp"
         android:background="#00ff0000"
         app:layout_constraintBottom_toTopOf="@+id/textView30"
         app:layout_constraintEnd_toStartOf="@+id/mypageButton"
-        app:layout_constraintStart_toStartOf="@+id/recyclerView6"
         app:layout_constraintTop_toTopOf="@+id/boardButton"
         app:srcCompat="@drawable/hut" />
 
@@ -152,12 +149,8 @@
         android:layout_height="17dp"
         android:layout_marginStart="13dp"
         android:layout_marginTop="31dp"
-        android:layout_marginEnd="14dp"
-        android:layout_marginBottom="16dp"
         android:background="#ffffff"
         android:src="@drawable/back"
-        app:layout_constraintBottom_toTopOf="@+id/recyclerView6"
-        app:layout_constraintEnd_toStartOf="@+id/recyclerView6"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="TouchTargetSizeCheck" />
@@ -353,7 +346,7 @@
         android:textColor="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:stateListAnimator="@null" />
+        android:stateListAnimator="@null" /><![CDATA[
 
         android:layout_marginEnd="28dp"
         android:layout_marginBottom="16dp"
@@ -361,31 +354,19 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerView6"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="64dp"
-        android:layout_marginEnd="36dp"
-        android:layout_marginBottom="48dp"
-        app:layout_constraintBottom_toBottomOf="@+id/writting"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    ]]>
 
     <Button
         android:id="@+id/writting"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="4dp"
         android:layout_marginBottom="97dp"
         android:text="글쓰기"
         android:textColor="#000000"
         android:textSize="20dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/recyclerView6" />
+        tools:layout_editor_absoluteX="277dp" />
 
 
 
