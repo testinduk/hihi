@@ -34,16 +34,25 @@ public class login extends Activity {
 
         editTextEmail = (EditText) findViewById(R.id.editTextTextPersonName);
         editTextPassword = (EditText) findViewById(R.id.editTextTextPassword);
-        buttonSignUp = (Button) findViewById(R.id.sign);// 회원가입 버튼 클릭시
-        buttonSignUp.setOnClickListener(new View.OnClickListener() {
 
+        Button signup = findViewById(R.id.sign); //회원가입 버튼 클릭시 회원가입 페이지로 이동
+        signup.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-                // SignUpActivity 연결
-                Intent intent = new Intent(getApplicationContext(), sign_up.class); //회원가입 화면으로 전환
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), sign_up.class);
                 startActivity(intent);
             }
         });
+
+//        buttonSignUp = (Button) findViewById(R.id.sign);// 회원가입 버튼 클릭시
+//        buttonSignUp.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                // SignUpActivity 연결
+//                Intent intent = new Intent(getApplicationContext(), sign_up.class); //회원가입 화면으로 전환
+//                startActivity(intent);
+//            }
+//        });
         buttonLogIn = (Button) findViewById(R.id.button); //로그인 버튼 클릭시
         buttonLogIn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -85,6 +94,8 @@ public class login extends Activity {
                         } else {
                             // 로그인 실패
                             Toast.makeText(login.this, "아이디 또는 비밀번호가 일치하지 않습니다.", Toast.LENGTH_SHORT).show();
+                            Intent intent = new Intent(getApplicationContext(), login.class);
+                            startActivityForResult(intent,1);
                         }
                     }
                 });

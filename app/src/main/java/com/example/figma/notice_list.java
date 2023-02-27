@@ -21,6 +21,16 @@ public class notice_list extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.notice_list);
 
+        // 글쓰기 버튼
+        Button writingButton = findViewById(R.id.writingButton);
+        writingButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), notice_writing.class);
+                startActivity(intent);
+            }
+        });
+
         //채팅 버튼
         ImageButton chatButton = findViewById(R.id.chatButton);
         chatButton.setOnClickListener(new View.OnClickListener() {
@@ -33,13 +43,13 @@ public class notice_list extends AppCompatActivity {
         });
 
         // 나눔 버튼
-        ImageButton sharingButton = findViewById(R.id.sharingButton);
-        sharingButton.setOnClickListener(new View.OnClickListener() {
+                ImageButton sharingButton = findViewById(R.id.sharingButton);
+                sharingButton.setOnClickListener(new View.OnClickListener() {
 
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), sharing_board.class);
-                startActivity(intent);
+                    @Override
+                    public void onClick(View view) {
+                        Intent intent = new Intent(getApplicationContext(), sharing_board.class);
+                        startActivity(intent);
             }
         });
 

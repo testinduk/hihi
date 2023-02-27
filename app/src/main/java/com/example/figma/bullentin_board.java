@@ -31,7 +31,13 @@ public class bullentin_board extends Activity {
     //    private MainAdpter adpter;
     private List<Board> Boardlist;
 
+
     private RecyclerView.Adapter Adapter;
+
+import android.view.View;
+import android.widget.Button;
+import android.widget.ImageButton;
+
 
     private SearchView bSearchView;
 
@@ -39,6 +45,16 @@ public class bullentin_board extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.bullentin_board);
+
+        // 글쓰기 버튼
+        Button writingButton = findViewById(R.id.writingButton);
+        writingButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), bullentin_board_writing.class);
+                startActivity(intent);
+            }
+        });
 
         //채팅 버튼
         ImageButton chatButton = findViewById(R.id.chatButton);
