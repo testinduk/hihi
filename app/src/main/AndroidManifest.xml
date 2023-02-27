@@ -17,7 +17,7 @@
         android:theme="@style/Theme.Figma"
         tools:targetApi="31">
         <activity
-            android:name=".main_home"
+            android:name=".bullentin_board_details"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -38,6 +38,7 @@
         <activity android:name=".bullentin_board"/>
         <activity android:name=".bullentin_board_writing"/>
         <activity android:name=".mypage"/>
+        <activity android:name=".sharing_writing"/>
 
     </application>
 
