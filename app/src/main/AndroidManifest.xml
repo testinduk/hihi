@@ -17,6 +17,7 @@
         android:theme="@style/Theme.Figma"
         tools:targetApi="31">
         <activity
+
             android:name=".login"
             android:exported="true">
             <intent-filter>
@@ -29,14 +30,22 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
+
         <activity android:name=".notice_list"/>
         <activity android:name=".notice_writing"/>
         <activity android:name=".Timetable"/>
-
         <activity android:name=".chat_person"/>
         <activity android:name=".sharing_board"/>
         <activity android:name=".bullentin_board"/>
+        <activity android:name=".bullentin_board_writing"/>
         <activity android:name=".mypage"/>
+        <activity android:name=".bullentin_board_details"/>
+        <activity android:name=".main_home"/>
+        <activity android:name=".sharing_details"/>
+        <activity android:name=".notice_details"/>
+        <activity android:name=".sign_up"/>
+        <activity android:name=".sharing_writing"/>
+
 
     </application>
 
