@@ -1,7 +1,9 @@
 package com.example.figma;
 
+
 import android.annotation.SuppressLint;
 import android.app.Activity;
+
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -14,10 +16,16 @@ import android.widget.Toast;
 
 import java.io.InputStream;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 
 public class my_inf_details extends Activity {
     private static final int REQUEST_CODE=0;
     private ImageView imageView;
+
+
+public class my_inf_details extends AppCompatActivity{
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
