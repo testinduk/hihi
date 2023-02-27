@@ -20,7 +20,7 @@ public class sharing_writing extends Activity {
 
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), sharing_details.class);
+                Intent intent = new Intent(getApplicationContext(), sharing_board.class);
                 startActivity(intent);
             }
         });
