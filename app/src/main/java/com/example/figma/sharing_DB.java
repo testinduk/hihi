@@ -6,6 +6,7 @@ public class sharing_DB {
     String title; //제목
     String content; //내용
     String uid;
+    String timestamp;
 
     //getter, setter 설정
     public String getTitle() {
@@ -28,11 +29,12 @@ public class sharing_DB {
     public String getUid(){return uid;}
 
     public void setUid(String uid){
+
         this.uid = uid;
     }
 
     //값을 추가할때 쓰는 함수, sharing_writing에서 sharing_DB함수에서 사용할 것임.
-    public sharing_DB(String title, String content){
+    public sharing_DB(String title, String content, String timestamp){
         this.title = title;
         this.content = content;
     }
