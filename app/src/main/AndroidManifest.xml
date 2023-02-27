@@ -5,18 +5,18 @@
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
-        android:usesCleartextTraffic="true"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Figma"
+        android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name=".chatting_main"
 
             android:name=".bullentin_board"
             android:exported="true">
@@ -30,6 +30,19 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
+
+        <activity android:name=".notice_list" />
+        <activity android:name=".notice_writing" />
+        <activity android:name=".Timetable" />
+        <activity android:name=".chat_person" />
+        <activity android:name=".sharing_board" />
+        <activity android:name=".bullentin_board" />
+        <activity android:name=".bullentin_board_writing" />
+        <activity android:name=".mypage" />
+        <activity android:name=".bullentin_board_details" />
+        <activity android:name=".main_home" />
+        <activity android:name=".sharing_details" />
+
 
 
         <activity android:name=".notice_details"/>
@@ -59,6 +72,7 @@
         <activity android:name=".notice_details"/>
         <activity android:name=".sign_up"/>
         <activity android:name=".sharing_writing"/>
+
 
 
 
