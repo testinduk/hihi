@@ -14,10 +14,10 @@
         android:layout_marginTop="650dp"
         android:layout_marginEnd="330dp"
         android:backgroundTint="@color/white"
+        android:onClick="chatButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:onClick="chatButton"
         app:srcCompat="@drawable/group10" />
 
     <ImageButton
@@ -28,10 +28,10 @@
         android:layout_marginTop="650dp"
         android:layout_marginEnd="250dp"
         android:backgroundTint="@color/white"
+        android:onClick="sharingButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:onClick="sharingButton"
         app:srcCompat="@drawable/heart3" />
 
     <ImageButton
@@ -42,10 +42,10 @@
         android:layout_marginTop="650dp"
         android:layout_marginEnd="140dp"
         android:backgroundTint="@color/white"
+        android:onClick="homeButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:onClick="homeButton"
         app:srcCompat="@drawable/hut3" />
 
     <ImageButton
@@ -56,10 +56,10 @@
         android:layout_marginTop="650dp"
         android:layout_marginEnd="100dp"
         android:backgroundTint="@color/white"
+        android:onClick="boardButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:onClick="boardButton"
         app:srcCompat="@drawable/group11" />
 
     <ImageButton
@@ -70,10 +70,10 @@
         android:layout_marginTop="650dp"
         android:layout_marginEnd="30dp"
         android:backgroundTint="@color/white"
+        android:onClick="mypageButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:onClick="mypageButton"
         app:srcCompat="@drawable/group12" />
 
     <TextView
@@ -188,11 +188,11 @@
 
     <SearchView
         android:id="@+id/searchView"
-        android:layout_width="22dp"
-        android:layout_height="20dp"
-        android:layout_marginTop="72dp"
-        android:layout_marginEnd="18dp"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="205dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="190dp"
+        android:layout_marginTop="71dp"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
