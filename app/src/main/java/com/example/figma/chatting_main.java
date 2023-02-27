@@ -5,10 +5,11 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
-
 import androidx.annotation.Nullable;
 
+
 public class chatting_main extends Activity {
+    private static final String TAG = "ChatActivity";
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -25,6 +26,6 @@ public class chatting_main extends Activity {
                 startActivity(intent);
             }
         });
-
     }
 }
+

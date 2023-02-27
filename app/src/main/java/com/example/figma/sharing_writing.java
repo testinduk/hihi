@@ -2,6 +2,18 @@ package com.example.figma;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
+
+import android.os.Bundle;
+
+import androidx.annotation.Nullable;
+
+public class sharing_writing extends Activity {
+
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.sharing_writing);
+    }
+
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -67,8 +79,13 @@ public class sharing_writing extends Activity {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
+                Intent intent = new Intent(getApplicationContext(), sharing_board.class);
+                startActivity(intent);
+
                 //에딧 텍스트 값을 문자열로 바꾸어 함수에 넣어줍니다.
                 add_sharing(edit1.getText().toString(),edit2.getText().toString());
+
             }
         });
 
@@ -96,6 +113,10 @@ public class sharing_writing extends Activity {
         startActivity(i);
         finish();
     }
+
+
+}
+
 }
 
 //    private static final int PICK_IMAGE_REQUEST = 1;
@@ -159,3 +180,4 @@ public class sharing_writing extends Activity {
 //        }
 //    }
 //}
+

@@ -6,6 +6,29 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 
+
+import androidx.appcompat.app.AppCompatActivity;
+
+public class sharing_details extends AppCompatActivity {
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.sharing_details);
+
+        // 수정 버튼
+        ImageButton btn_sha_amend = findViewById(R.id.btn_sha_amend);
+
+        btn_sha_amend.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), sharing_writing.class);
+                startActivity(intent);
+            }
+        });
+
+
+
+
 import androidx.annotation.Nullable;
 
 public class sharing_details extends Activity {
@@ -25,5 +48,6 @@ public class sharing_details extends Activity {
                 startActivity(intent);
             }
         });
+
     }
 }
