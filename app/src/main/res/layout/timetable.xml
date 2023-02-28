@@ -1,29 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
 
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
-
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Timetable">
 
+
     <ImageButton
         android:id="@id/backButton"
         android:layout_width="58dp"
         android:layout_height="58dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="11dp"
         android:layout_marginBottom="8dp"
         android:background="@android:color/transparent"
+        android:src="@drawable/back"
         app:layout_constraintBottom_toTopOf="@+id/const_vp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:src="@drawable/back"
+        app:layout_constraintVertical_bias="0.625"
         tools:ignore="SpeakableTextPresentCheck" />
-
 
     <ImageButton
         android:id="@+id/mypageButton"
@@ -38,7 +36,7 @@
         app:layout_constraintBottom_toTopOf="@+id/textmypage"
         app:layout_constraintEnd_toEndOf="@+id/recyclerView6"
         app:layout_constraintStart_toEndOf="@+id/textboard"
-        app:layout_constraintTop_toBottomOf="@+id/button16"
+        app:layout_constraintTop_toBottomOf="@+id/btn_complete"
         android:src="@drawable/mypage" />
 
     <TextView
@@ -146,7 +144,7 @@
         android:src="@drawable/plus" />
 
     <Button
-        android:id="@+id/button16"
+        android:id="@+id/btn_complete"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
@@ -201,7 +199,7 @@
             android:layout_height="match_parent">
 
             <Button
-                android:id="@+id/button12"
+                android:id="@+id/btn_grad1"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:backgroundTint="@color/gray"
@@ -214,7 +212,7 @@
 
             <Button
 
-                android:id="@+id/button13"
+                android:id="@+id/btn_grad2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:backgroundTint="@color/gray"
@@ -226,7 +224,7 @@
                 tools:layout_editor_absoluteY="454dp" />
 
             <Button
-                android:id="@+id/button15"
+                android:id="@+id/btn_grad3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:backgroundTint="@color/gray"
@@ -238,7 +236,7 @@
                 tools:layout_editor_absoluteY="527dp" />
 
             <Button
-                android:id="@+id/button14"
+                android:id="@+id/btn_grad4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:backgroundTint="@color/gray"
@@ -261,7 +259,7 @@
         android:layout_marginTop="9dp"
         android:layout_marginEnd="11dp"
         android:layout_marginBottom="12dp"
-        app:layout_constraintBottom_toTopOf="@+id/button16"
+        app:layout_constraintBottom_toTopOf="@+id/btn_complete"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
