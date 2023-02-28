@@ -42,6 +42,9 @@
         <activity android:name=".bullentin_board_details" />
         <activity android:name=".main_home" />
         <activity android:name=".sharing_details" />
+        <activity android:name=".notice_details"/>
+
+
 
     </application>
 

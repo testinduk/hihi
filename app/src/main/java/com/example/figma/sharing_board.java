@@ -91,17 +91,7 @@ public class sharing_board extends Activity {
                 startActivity(intent);
             }
         });
-        
-        //글쓰기 버튼
-        Button writing_Button = (Button) findViewById(R.id.writting);
-        writing_Button.setOnClickListener(new View.OnClickListener() {
 
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), sharing_writing.class);
-                startActivity(intent);
-            }
-        });
     }
 
 }
