@@ -69,7 +69,7 @@
     <ImageButton
         android:id="@+id/homeButton"
         android:layout_width="30dp"
-        android:layout_height="0dp"
+        android:layout_height="30dp"
         android:layout_marginBottom="16dp"
         android:background="#00ff0000"
         app:layout_constraintBottom_toTopOf="@+id/texthome"
@@ -172,8 +172,6 @@
         android:stateListAnimator="@null"
         android:text="글쓰기"
         android:textColor="#000000"
-        app:layout_constraintBottom_toTopOf="@+id/recyclerView9"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textView38"
         app:layout_constraintTop_toTopOf="@+id/textView38" />
 
@@ -187,6 +185,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

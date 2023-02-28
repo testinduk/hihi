@@ -7,12 +7,16 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.SearchView;
 
 import androidx.annotation.Nullable;
 
 
 public class notice_list extends AppCompatActivity {
     @Override
+
+    private SearchView nSearchView;
+
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.notice_list);
@@ -90,6 +94,33 @@ public class notice_list extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), main_home.class);
                 startActivity(intent);
+            }
+        });
+
+        //글쓰기 버튼 연동
+        Button developer_info_btn = (Button) findViewById(R.id.SerchView4);
+        developer_info_btn.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), bullentin_board_writing.class);
+                startActivity(intent);
+            }
+        });
+
+        nSearchView = findViewById(R.id.searchView); //SearchView
+
+        nSearchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String s) {
+                // 입력받은 문자열 처리
+                return true;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String s) {
+                // 입력란의 문자열이 바뀔 때 처리
+                return false;
             }
         });
 
