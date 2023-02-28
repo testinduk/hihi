@@ -183,7 +183,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="37dp"
         android:layout_marginEnd="33dp"
-        android:text="자유게시판입니다."
+        android:text="자유게시판"
         android:textColor="#000000"
         android:textSize="20dp"
         app:layout_constraintEnd_toStartOf="@+id/writingButton"
