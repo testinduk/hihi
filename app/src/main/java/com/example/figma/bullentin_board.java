@@ -130,7 +130,7 @@ public class bullentin_board extends Activity {
         // 나눔 버튼
         ImageButton sharingButton = findViewById(R.id.sharingButton);
         sharingButton.setOnClickListener(new View.OnClickListener() {
-
+ㅡ
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), sharing_board.class);

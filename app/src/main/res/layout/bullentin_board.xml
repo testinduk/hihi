@@ -60,15 +60,13 @@
         android:id="@+id/mypage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="7dp"
         android:layout_marginEnd="31dp"
         android:layout_marginBottom="29dp"
         android:text="마이페이지"
         android:textColor="#000000"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/writingButton" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
@@ -89,10 +87,10 @@
         android:id="@+id/searchView2"
         android:layout_width="225dp"
         android:layout_height="30dp"
-        android:background="@drawable/searching"
         android:layout_marginEnd="40dp"
-        app:layout_constraintBottom_toTopOf="@+id/recyclerView"
-        app:layout_constraintEnd_toEndOf="parent" />
+        android:background="@drawable/searching"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="99dp" />
 
     <ImageButton
         android:id="@+id/chatButton"
@@ -102,7 +100,6 @@
         android:src="@drawable/chat"
         app:layout_constraintBottom_toBottomOf="@+id/sharingButton"
         app:layout_constraintEnd_toEndOf="@+id/chat"
-        app:layout_constraintStart_toStartOf="@+id/recyclerView"
         app:layout_constraintTop_toTopOf="@+id/sharingButton" />
 
     <ImageButton
@@ -190,15 +187,13 @@
         android:id="@+id/button11"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:layout_marginStart="34dp"
         android:layout_marginEnd="35dp"
         android:backgroundTint="#ffffff"
         android:stateListAnimator="@null"
         android:text="1"
         android:textColor="#000000"
         app:layout_constraintBaseline_toBaselineOf="@+id/button18"
-        app:layout_constraintEnd_toEndOf="@+id/share"
-        app:layout_constraintStart_toStartOf="@+id/recyclerView" />
+        app:layout_constraintEnd_toEndOf="@+id/share" />
 
     <Button
         android:id="@+id/button18"
@@ -260,48 +255,11 @@
         app:layout_constraintTop_toTopOf="@+id/button20" />
 
     <Button
-        android:id="@+id/writingButton"
-        android:layout_width="70dp"
-        android:layout_height="35dp"
-        android:layout_marginTop="71dp"
-        android:layout_marginBottom="572dp"
-        android:backgroundTint="#ffffff"
-        android:stateListAnimator="@null"
-        android:text="글쓰기"
-        android:textColor="#000000"
-        android:textSize="10dp"
-        app:layout_constraintBottom_toTopOf="@+id/mypage"
-        app:layout_constraintEnd_toEndOf="@+id/searchView2"
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerView"
-        android:layout_width="402dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="55dp"
-        android:layout_marginBottom="105dp"
-        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.444"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button12"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <SearchView
-        android:id="@+id/searchView"
-        android:layout_width="22dp"
-        android:layout_height="20dp"
-        android:layout_marginTop="72dp"
-        android:layout_marginEnd="18dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
         android:id="@+id/button12"
         android:layout_width="80dp"
         android:layout_height="40dp"
-        android:layout_marginTop="34dp"
-        android:layout_marginEnd="17dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="40dp"
         android:backgroundTint="@color/white"
         android:text="글쓰기"
         android:textColor="@color/black"
