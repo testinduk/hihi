@@ -87,3 +87,4 @@ public class my_inf_details extends AppCompatActivity{
     }
 }
 
+

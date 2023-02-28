@@ -1,29 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
 
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
-
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Timetable">
 
+
     <ImageButton
         android:id="@id/backButton"
         android:layout_width="58dp"
         android:layout_height="58dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="11dp"
         android:layout_marginBottom="8dp"
         android:background="@android:color/transparent"
+        android:src="@drawable/back"
         app:layout_constraintBottom_toTopOf="@+id/const_vp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:src="@drawable/back"
+        app:layout_constraintVertical_bias="0.625"
         tools:ignore="SpeakableTextPresentCheck" />
-
 
     <ImageButton
         android:id="@+id/mypageButton"
@@ -35,14 +33,14 @@
         android:layout_marginBottom="5dp"
         android:backgroundTint="@color/white"
         android:onClick="mypageButton"
-        app:layout_constraintBottom_toTopOf="@+id/mypage"
+        app:layout_constraintBottom_toTopOf="@+id/textmypage"
         app:layout_constraintEnd_toEndOf="@+id/recyclerView6"
-        app:layout_constraintStart_toEndOf="@+id/board"
-        app:layout_constraintTop_toBottomOf="@+id/button16"
+        app:layout_constraintStart_toEndOf="@+id/textboard"
+        app:layout_constraintTop_toBottomOf="@+id/btn_complete"
         android:src="@drawable/mypage" />
 
     <TextView
-        android:id="@+id/board"
+        android:id="@+id/textboard"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
@@ -51,11 +49,11 @@
         android:textColor="#000000"
         android:textSize="12sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/mypage"
+        app:layout_constraintEnd_toStartOf="@+id/textmypage"
         app:layout_constraintTop_toBottomOf="@+id/boardButton" />
 
     <TextView
-        android:id="@+id/home"
+        android:id="@+id/texthome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
@@ -68,7 +66,7 @@
         app:layout_constraintTop_toBottomOf="@+id/homeButton" />
 
     <TextView
-        android:id="@+id/mypage"
+        android:id="@+id/textmypage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="40dp"
@@ -102,12 +100,12 @@
         android:onClick="homeButton"
         app:layout_constraintBottom_toBottomOf="@+id/boardButton"
         app:layout_constraintEnd_toStartOf="@+id/boardButton"
-        app:layout_constraintStart_toEndOf="@+id/share"
+        app:layout_constraintStart_toEndOf="@+id/textsharing"
         app:layout_constraintTop_toTopOf="@+id/boardButton"
         android:src="@drawable/hut" />
 
     <TextView
-        android:id="@+id/share"
+        android:id="@+id/textsharing"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="111dp"
@@ -128,7 +126,7 @@
         android:backgroundTint="@color/white"
         android:onClick="sharingButton"
         app:layout_constraintBottom_toBottomOf="@+id/homeButton"
-        app:layout_constraintEnd_toStartOf="@+id/home"
+        app:layout_constraintEnd_toStartOf="@+id/texthome"
         app:layout_constraintStart_toEndOf="@+id/chatButton"
         app:layout_constraintTop_toTopOf="@+id/homeButton"
         android:src="@drawable/heart" />
@@ -140,13 +138,13 @@
         android:backgroundTint="@color/white"
         android:onClick="boardButton"
         app:layout_constraintBottom_toBottomOf="@+id/mypageButton"
-        app:layout_constraintEnd_toEndOf="@+id/board"
-        app:layout_constraintStart_toStartOf="@+id/board"
+        app:layout_constraintEnd_toEndOf="@+id/textboard"
+        app:layout_constraintStart_toStartOf="@+id/textboard"
         app:layout_constraintTop_toTopOf="@+id/mypageButton"
         android:src="@drawable/plus" />
 
     <Button
-        android:id="@+id/button16"
+        android:id="@+id/btn_complete"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
@@ -160,7 +158,7 @@
         app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
-        android:id="@+id/chat"
+        android:id="@+id/textchat"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
@@ -201,7 +199,7 @@
             android:layout_height="match_parent">
 
             <Button
-                android:id="@+id/button12"
+                android:id="@+id/btn_grad1"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:backgroundTint="@color/gray"
@@ -214,7 +212,7 @@
 
             <Button
 
-                android:id="@+id/button13"
+                android:id="@+id/btn_grad2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:backgroundTint="@color/gray"
@@ -226,7 +224,7 @@
                 tools:layout_editor_absoluteY="454dp" />
 
             <Button
-                android:id="@+id/button15"
+                android:id="@+id/btn_grad3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:backgroundTint="@color/gray"
@@ -238,7 +236,7 @@
                 tools:layout_editor_absoluteY="527dp" />
 
             <Button
-                android:id="@+id/button14"
+                android:id="@+id/btn_grad4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:backgroundTint="@color/gray"
@@ -261,7 +259,7 @@
         android:layout_marginTop="9dp"
         android:layout_marginEnd="11dp"
         android:layout_marginBottom="12dp"
-        app:layout_constraintBottom_toTopOf="@+id/button16"
+        app:layout_constraintBottom_toTopOf="@+id/btn_complete"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
