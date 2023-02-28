@@ -7,12 +7,12 @@ import android.os.Bundle;
 
 import androidx.annotation.Nullable;
 
-public class sharing_writing extends Activity {
-
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.sharing_writing);
-    }
+//public class sharing_writing extends Activity {
+//
+//    protected void onCreate(@Nullable Bundle savedInstanceState) {
+//        super.onCreate(savedInstanceState);
+//        setContentView(R.layout.sharing_writing);
+//    }
 
 import android.content.Intent;
 import android.net.Uri;
@@ -117,7 +117,6 @@ public class sharing_writing extends Activity {
 
 }
 
-}
 
 //    private static final int PICK_IMAGE_REQUEST = 1;
 //
