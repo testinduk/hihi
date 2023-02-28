@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".sharing_board">
 
-
     <TextView
         android:id="@+id/textmypage"
         android:layout_width="wrap_content"
