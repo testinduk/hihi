@@ -21,8 +21,8 @@ public class notice_list extends AppCompatActivity {
         // 글쓰기 버튼
         Button writingButton = findViewById(R.id.writingButton);
         writingButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
+                @Override
+                public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), notice_writing.class);
                 startActivity(intent);
             }
